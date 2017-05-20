@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #6441A4;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#body {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #CDB2FF;
+}
+
+#buttons {
+    margin-top: 5vh;
+    flex: 0 0 80vw;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons button {
+    background-color: #6441A4;
+    color: white;
+    border: 0;
+    padding: 5px 3vw;
+}
+
+#buttons button:hover {
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+#panel {
+    background-color: #6441A4;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.channel {
+    background-color: #CDB2FF;
+    margin: 40px auto;
+    width: 90%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.picture {
+    border: 3px solid black;
+    border-radius: 50%;
+    flex: 0 0 120px;
+    height: 120px;
+    margin-top: 4vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing:border-box;
+}
+
+
+
+.content {
+    
+    flex: 1 0 100%;
+    margin: 2vh 2vw;
+    
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.content h3, .content p{
+
+    flex: 0 0 100%;
+    
+}
+
+.content h3, .content p, .onBut{
+
+    margin: 2vh 2vw;
+
+}
+
+.onBut, .offBut{
+
+    border: 0;
+    padding: 1vh 3vw;
+    cursor: pointer;
+    border-radius: 10px;
+    color:black;
+}
+
+.onBut{
+
+    background-color: royalblue;
+}
+
+.offBut{
+    background-color: red;
+}
+
+.offBut:hover{
+
+    background-color: lightcoral;
+
+}
+
+.onBut:hover{
+
+    background-color: lightblue;
+
+}
+
+
+footer {
+    background-color: #6441A4;
+    color: white;
+    padding: 2vh 0.5vw;
+}
+
+footer a {
+    color: white;
+}
+
+@media all and (min-width: 800px) {
+    #buttons {
+        flex: 0 0 100%;
+    }
+    #panel {
+        flex: 0 80%;
+    }
+
+    .channel {
+    
+        height: 200px;
+    
+    }
+
+    .picture {
+        flex: 0 0 30%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+
+
+    .content {
+        margin: 0;
+        flex: 1;
+        height: 100%;
+    }
+}
